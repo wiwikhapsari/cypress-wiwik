@@ -1,0 +1,26 @@
+{
+  "name": "cypress-wiwik",
+  "version": "1.0.0",
+  "description": "cypress testing",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiwikhapsari/cypress-wiwik.git"
+  },
+  "author": "wiwik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiwikhapsari/cypress-wiwik/issues"
+  },
+  "homepage": "https://github.com/wiwikhapsari/cypress-wiwik#readme",
+  "devDependencies": {
+    "cypress": "^13.5.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.7.0"
+  }
+}
