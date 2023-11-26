@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-24T12:17:33.608Z",
+    "end": "2023-11-24T12:18:00.451Z",
+    "duration": 26843,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "13db70e0-0fd8-4788-ad04-1518104db23a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\With Pom.cy.js",
+      "file": "cypress\\e2e\\With Pom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "153f3c41-3ecb-410a-9a33-299f816d8fba",
+          "title": "User should be able to login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "with valid data",
+              "fullTitle": "User should be able to login with valid data",
+              "timedOut": null,
+              "duration": 13396,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\With Pom.cy.js\"\n}",
+              "code": "LoginPage.fillEmail('tree.wiek@gmail.com');\nLoginPage.fillPassword('12345678');\nLoginPage.clickMasukButton();\nDashboardPage.verifyDashboardPage();\nDashboardPage.clickProfileButton();\nProfilePage.verifyProfilePage();\nPromosiPage.clickpromosibutton();\nPromosiPage.verifyPromosiPage();\nKontenmarketingPage.clickKontenmarketingbutton();\nKontenmarketingPage.verifyKontenmarketingPage();\nPesanPage.clickpesanbutton();\nPesanPage.verifyPesanPage();",
+              "err": {},
+              "uuid": "7b4c35f2-79f9-4bb3-a8d5-67b75ebd0e10",
+              "parentUUID": "153f3c41-3ecb-410a-9a33-299f816d8fba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "with invalid data",
+              "fullTitle": "User should be able to login with invalid data",
+              "timedOut": null,
+              "duration": 10685,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\With Pom.cy.js\"\n}",
+              "code": "LoginPage.fillEmail('dummy@gmail.com');\nLoginPage.fillPassword('1234567');\nLoginPage.clickMasukButton();\nLoginPage.verifyLoginFailed();",
+              "err": {},
+              "uuid": "3ce0fea4-c12e-4f00-96a5-831a938fb9ac",
+              "parentUUID": "153f3c41-3ecb-410a-9a33-299f816d8fba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b4c35f2-79f9-4bb3-a8d5-67b75ebd0e10",
+            "3ce0fea4-c12e-4f00-96a5-831a938fb9ac"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24081,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
